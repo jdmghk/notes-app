@@ -1,0 +1,124 @@
+:root   {
+    --background-color: #ffce1c;
+    --bs-primary-rgb: #1c1d3b;
+}
+
+
+body {
+    font-family: monospace;
+    background-color: var(--background-color);
+    color: var(--bs-primary-rgb);
+    font-weight: 300;
+    font-size: 1.2rem;
+    background-image: url(../img/alpha.png);
+    background-size: 50%;
+
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+}
+
+.container-fluid-custom {
+    max-width: 1600px;
+}
+
+/* Button */
+.btn {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    border-radius: 2rem;
+}
+
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary-rgb);
+    --bs-btn-border-color: var(--bs-primary-rgb);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #3a3b70;
+    --bs-btn-hover-border-color: #3a3b70;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary-rgb);
+    --bs-btn-active-border-color: var(--bs-primary-rgb);
+    --bs-btn-active-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-diabled-bg: var(--bs-primary-rgb);
+    --bs-btn-disabled-border-color: var(--bs-primary-rgb);
+}
+
+
+.btn-outline-primary {
+    --bs-btn-color: var(--bs-primary-rgb);
+    --bs-btn-border-color: var(--bs-primary-rgb);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #3a3b70;
+    --bs-btn-hover-border-color: #3a3b70;
+    --bs-btn-focus-shadow-rgb: 13,110,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary-rgb);
+    --bs-btn-active-border-color: var(--bs-primary-rgb);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--bs-primary-rgb);
+    --bs-btn-disabled-bg: transparent;
+}
+
+.pagination {
+    --bs-pagination-color: var(--bs-primary-rgb);
+    --bs-pagination-active-bg: var(--bs-primary-rgb);
+    --bs-pagination-active-border-color: var(--bs-primary-rgb);
+}
+
+
+/* Home */
+@media (min-width: 1200px){
+    .home   {
+        background: 
+            url('../img/designer-desk.svg') left bottom no-repeat,
+            url('../img/designer-giving-a-keynote.svg') right bottom no-repeat,
+            url('../img/alpha.png') left top repeat,
+            var(--background-color);
+            background-size: 20%;
+        
+
+        ;
+    }
+
+}
+
+
+.home-title::before {
+    content: url('../img/stars.png');
+    position: absolute;
+    left: -350px;
+    top: -290px;
+}
+
+.home-title::after {
+    content: url('../img/stars.png');
+    position: absolute;
+    right: -350px;
+    bottom: -290px;
+}
+
+
+/* .btn-outline-custom {
+    color: #2E2F5B;
+    border-color: #2E2F5B;
+}
+.btn-outline-custom:hover {
+    color: #fff;
+    background-color: #2E2F5B;
+}
+.btn-custom {
+    color: #2E2F5B;
+    border-color: #2E2F5B;
+}
+.btn-custom:hover {
+    color: #fff;
+    background-color: #2E2F5B;
+    border-color: #2E2F5B;
+} */
